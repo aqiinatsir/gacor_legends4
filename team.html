@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team – Gacor Legends</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="home.html" class="nav-logo"><img src="logo.jpeg" alt="Gacor Legends"><span>Gacor Legends</span></a>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="penjelasan.html">Penjelasan</a></li>
+      <li><a href="p2w.html">P2W</a></li>
+      <li><a href="team.html" class="active">Team</a></li>
+      <li><a href="donasi.html">Donasi</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="home.html">🏠 Home</a>
+  <a href="penjelasan.html">📜 Penjelasan</a>
+  <a href="p2w.html">💎 P2W</a>
+  <a href="team.html" class="active">👥 Team</a>
+  <a href="donasi.html">❤️ Donasi</a>
+</div>
+
+<main class="main-content">
+  <section class="section" style="padding-top:130px;">
+    <div class="section-header"><h2>Tim Kami</h2><p>Kenali para admin dan staff yang mengelola server</p></div>
+    <div class="team-grid">
+      <div class="team-card"><div class="team-avatar">A</div><h3>AnzouTz</h3><span class="team-role">Owner</span></div>
+      <div class="team-card"><div class="team-avatar">R</div><h3>Ris</h3><span class="team-role">Partner</span></div>
+      <div class="team-card"><div class="team-avatar">S</div><h3>Snow</h3><span class="team-role">Admin RP</span></div>
+      <div class="team-card"><div class="team-avatar">M</div><h3>Madun</h3><span class="team-role">Admin Build</span></div>
+      <div class="team-card"><div class="team-avatar">L</div><h3>Luthh</h3><span class="team-role">Admin Magang</span></div>
+      <div class="team-card"><div class="team-avatar">B</div><h3>Bima</h3><span class="team-role">Admin Replay</span></div>
+    </div>
+  </section>
+
+  <div class="section-alt">
+    <div>
+      <div class="section-header"><h2>Tugas &amp; Tanggung Jawab</h2><p>Pelajari peran masing-masing staff</p></div>
+      <div class="features-grid">
+        <div class="feature-card"><span class="feature-icon">👑</span><h3>Owner</h3><p>Bertanggung jawab penuh atas operasional server, pengambilan keputusan strategis, dan pengembangan server ke depannya.</p></div>
+        <div class="feature-card"><span class="feature-icon">🤝</span><h3>Partner</h3><p>Membantu owner dalam mengelola server dan berkontribusi dalam pengambilan keputusan penting.</p></div>
+        <div class="feature-card"><span class="feature-icon">🎭</span><h3>Admin RP</h3><p>Mengelola storyline, event roleplay, dan memastikan kualitas roleplay di server tetap terjaga.</p></div>
+        <div class="feature-card"><span class="feature-icon">🏗️</span><h3>Admin Build</h3><p>Bertanggung jawab atas konstruksi bangunan, spawn, dan struktur penting lainnya di server.</p></div>
+        <div class="feature-card"><span class="feature-icon">📚</span><h3>Admin Magang</h3><p>Membantu berbagai tugas admin dan belajar untuk menjadi admin yang lebih baik.</p></div>
+        <div class="feature-card"><span class="feature-icon">🎬</span><h3>Admin Replay</h3><p>Mengelola konten video, replay, dan dokumentasi event-event di server.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-header"><h2>Bergabung dengan Tim</h2><p>Tertarik menjadi bagian dari tim kami?</p></div>
+    <div class="explanation-content">
+      <div class="explanation-text">
+        <h3>Open Recruitment</h3>
+        <p>Kami selalu mencari individu yang berbakat dan bersemangat untuk bergabung dengan tim Gacor Legends. Jika Anda memiliki keterampilan dalam:</p>
+        <p>✦ Building Minecraft<br>✦ Storytelling dan Roleplay<br>✦ Video Editing<br>✦ Community Management<br>✦ Plugin Development</p>
+        <p>Jangan ragu untuk menghubungi kami! Kirimkan portofolio Anda ke Discord server kami dan ceritakan mengapa Anda ingin bergabung.</p>
+        <a href="https://wa.me/6283878828987" target="_blank" class="btn-primary" style="display:inline-flex;margin-top:24px;"><span>Hubungi Kami</span></a>
+      </div>
+      <div class="explanation-image"><img src="logo.jpeg" alt="Join Team"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section"><h4>Gacor Legends</h4><p>Server Minecraft Roleplay terbaik di Indonesia dengan komunitas yang ramah dan aktif.</p></div>
+    <div class="footer-section"><h4>Quick Links</h4><a href="home.html">Home</a><a href="penjelasan.html">Penjelasan</a><a href="p2w.html">P2W</a><a href="team.html">Team</a><a href="donasi.html">Donasi</a></div>
+    <div class="footer-section"><h4>Contact</h4><p>Discord: Gacor Legends</p><p>Email: support@gacorlegends.com</p></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Gacor Legends — All Rights Reserved</p></div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const h=document.getElementById('hamburger'),m=document.getElementById('mobileMenu');
+  h.addEventListener('click',()=>{h.classList.toggle('open');m.classList.toggle('open');});
+  m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{h.classList.remove('open');m.classList.remove('open');}));
+  document.addEventListener('click',e=>{if(!h.contains(e.target)&&!m.contains(e.target)){h.classList.remove('open');m.classList.remove('open');}});
+</script>
+</body>
+</html>

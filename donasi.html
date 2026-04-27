@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donasi – Gacor Legends</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="home.html" class="nav-logo"><img src="logo.jpeg" alt="Gacor Legends"><span>Gacor Legends</span></a>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="penjelasan.html">Penjelasan</a></li>
+      <li><a href="p2w.html">P2W</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="donasi.html" class="active">Donasi</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="home.html">🏠 Home</a>
+  <a href="penjelasan.html">📜 Penjelasan</a>
+  <a href="p2w.html">💎 P2W</a>
+  <a href="team.html">👥 Team</a>
+  <a href="donasi.html" class="active">❤️ Donasi</a>
+</div>
+
+<main class="main-content">
+  <section class="donasi-hero">
+    <div style="position:relative;z-index:1;text-align:center;">
+      <h1>❤️ Donasi</h1>
+      <p>Dukung pengembangan server Gacor Legends dengan berdonasi. Setiap kontribusi Anda sangat berarti untuk kemajuan server kami.</p>
+    </div>
+  </section>
+
+  <section class="donasi-section">
+    <div class="donasi-card">
+      <h2>Scan QRIS untuk Donasi</h2>
+      <p class="subtitle">Dukung kami dengan berdonasi melalui QRIS</p>
+      <div class="qris-donasi-container">
+        <img src="qris.png" alt="QRIS Donasi" class="qris-donasi-image">
+      </div>
+      <div class="donasi-info">
+        <h3>📋 Cara Berdonasi</h3>
+        <ol>
+          <li>Scan kode QRIS di atas menggunakan e-wallet atau mobile banking Anda</li>
+          <li>Masukkan nominal donasi sesuai keinginan Anda</li>
+          <li>Lakukan pembayaran dan simpan bukti screenshot</li>
+          <li>Kirim bukti donasi melalui WhatsApp dengan klik tombol di bawah</li>
+          <li>Donasi Anda akan tercatat dan kami ucapkan terima kasih!</li>
+        </ol>
+      </div>
+      <a href="https://wa.me/6283878828987?text=Halo%20admin%20Gacor%20Legends%2C%20saya%20ingin%20mengirimkan%20bukti%20donasi.%20Berikut%20screenshot%20pembayaran%20saya%3A" target="_blank" class="btn-donasi-wa">
+        💬 Kirim Bukti Donasi via WhatsApp
+      </a>
+    </div>
+
+    <div class="benefits-section">
+      <h3>🎯 Manfaat Donasi Anda</h3>
+      <div class="benefits-grid">
+        <div class="benefit-item"><div class="benefit-icon">🖥️</div><h4>Upgrade Server</h4><p>Donasi Anda membantu kami meningkatkan performa dan kapasitas server.</p></div>
+        <div class="benefit-item"><div class="benefit-icon">🔧</div><h4>Plugin &amp; Fitur</h4><p>Mendukung pengembangan plugin dan fitur-fitur menarik untuk server.</p></div>
+        <div class="benefit-item"><div class="benefit-icon">🎁</div><h4>Event &amp; Hadiah</h4><p>Membantu menyelenggarakan event dengan hadiah menarik untuk komunitas.</p></div>
+        <div class="benefit-item"><div class="benefit-icon">👥</div><h4>Komunitas</h4><p>Mendukung pertumbuhan dan keberlanjutan komunitas Gacor Legends.</p></div>
+      </div>
+    </div>
+
+    <div class="thank-you-section">
+      <h3>🙏 Terima Kasih!</h3>
+      <p>Setiap donasi yang Anda berikan, besar maupun kecil, sangat berarti bagi kami. Dukungan Anda memotivasi kami untuk terus memberikan pengalaman bermain Minecraft roleplay terbaik untuk komunitas Indonesia. Terima kasih telah menjadi bagian dari perjalanan Gacor Legends!</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section"><h4>Gacor Legends</h4><p>Server Minecraft Roleplay terbaik di Indonesia dengan komunitas yang ramah dan aktif.</p></div>
+    <div class="footer-section"><h4>Quick Links</h4><a href="home.html">Home</a><a href="penjelasan.html">Penjelasan</a><a href="p2w.html">P2W</a><a href="team.html">Team</a><a href="donasi.html">Donasi</a></div>
+    <div class="footer-section"><h4>Contact</h4><p>Discord: Gacor Legends</p><a href="https://wa.me/6283878828987" target="_blank">WhatsApp: +62 838-7882-8987</a><p>Email: support@gacorlegends.com</p></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Gacor Legends — All Rights Reserved</p></div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const h=document.getElementById('hamburger'),m=document.getElementById('mobileMenu');
+  h.addEventListener('click',()=>{h.classList.toggle('open');m.classList.toggle('open');});
+  m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{h.classList.remove('open');m.classList.remove('open');}));
+  document.addEventListener('click',e=>{if(!h.contains(e.target)&&!m.contains(e.target)){h.classList.remove('open');m.classList.remove('open');}});
+</script>
+</body>
+</html>

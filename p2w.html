@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P2W – Gacor Legends</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="home.html" class="nav-logo"><img src="logo.jpeg" alt="Gacor Legends"><span>Gacor Legends</span></a>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="penjelasan.html">Penjelasan</a></li>
+      <li><a href="p2w.html" class="active">P2W</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="donasi.html">Donasi</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="home.html">🏠 Home</a>
+  <a href="penjelasan.html">📜 Penjelasan</a>
+  <a href="p2w.html" class="active">💎 P2W</a>
+  <a href="team.html">👥 Team</a>
+  <a href="donasi.html">❤️ Donasi</a>
+</div>
+
+<main class="main-content">
+
+  <!-- Hero banner -->
+  <section class="donasi-hero" style="min-height:40vh;">
+    <div style="position:relative;z-index:1;text-align:center;">
+      <h1 style="font-size:clamp(26px,5vw,50px);margin-bottom:14px;">💎 Pay to Win</h1>
+      <p>Dukung server dan dapatkan rank, kit, serta cosmetic eksklusif untuk pengalaman bermain lebih seru.</p>
+    </div>
+  </section>
+
+  <!-- QRIS -->
+  <section class="section" style="padding-top:60px;padding-bottom:20px;">
+    <div class="qris-section">
+      <h3>💳 Pembayaran via QRIS</h3>
+      <p>Scan QRIS di bawah, lalu klik tombol untuk kirim bukti ke admin</p>
+      <div class="qris-image-container">
+        <img src="qris.png" alt="QRIS Payment" class="qris-image">
+      </div><br>
+      <a href="https://wa.me/6283878828987?text=Halo%20admin%20Gacor%20Legends%2C%20saya%20sudah%20melakukan%20pembayaran%20melalui%20QRIS.%20Berikut%20bukti%20screenshot%20pembayaran%20saya%3A" target="_blank" class="btn-bukti">
+        📱 Sudah Bayar? Kirim Bukti SS
+      </a>
+      <div class="payment-info">
+        <h4>📋 Cara Pembayaran</h4>
+        <ol>
+          <li>Pilih item dari daftar di bawah dan klik tombol "Pilih"</li>
+          <li>Scan QRIS di atas menggunakan e-wallet atau mobile banking</li>
+          <li>Masukkan nominal sesuai harga item yang dipilih</li>
+          <li>Simpan screenshot bukti pembayaran</li>
+          <li>Klik tombol "Sudah Bayar? Kirim Bukti SS" di atas</li>
+          <li>Admin akan memverifikasi dalam 1×24 jam</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Items -->
+  <section class="section" style="padding-top:20px;">
+    <div class="section-header"><h2>Daftar Item P2W</h2><p>Pilih rank, kit, atau cosmetic yang kamu inginkan</p></div>
+    <div class="p2w-container">
+
+      <div class="p2w-category">
+        <h3>👑 Rank</h3>
+        <ul class="p2w-list">
+          <li><span class="p2w-item-name">Rank Pemula</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 15.000</span><button class="btn-select-payment" onclick="showModal('Rank Pemula','15000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Rank Pejuang</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 25.000</span><button class="btn-select-payment" onclick="showModal('Rank Pejuang','25000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Rank Pahlawan</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 40.000</span><button class="btn-select-payment" onclick="showModal('Rank Pahlawan','40000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Rank Legenda</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 50.000</span><button class="btn-select-payment" onclick="showModal('Rank Legenda','50000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Rank Sepuh</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 60.000</span><button class="btn-select-payment" onclick="showModal('Rank Sepuh','60000')">Pilih</button></div></li>
+        </ul>
+      </div>
+
+      <div class="p2w-category">
+        <h3>🎒 Kit</h3>
+        <ul class="p2w-list">
+          <li><span class="p2w-item-name">Suprem Kit</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 25.000</span><button class="btn-select-payment" onclick="showModal('Suprem Kit','25000')">Pilih</button></div></li>
+        </ul>
+      </div>
+
+      <div class="p2w-category">
+        <h3>✨ Cosmetic</h3>
+        <ul class="p2w-list">
+          <li><span class="p2w-item-name">Cosmetic Pack Basic</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 25.000</span><button class="btn-select-payment" onclick="showModal('Cosmetic Pack Basic','25000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Cosmetic Pack Premium</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 30.000</span><button class="btn-select-payment" onclick="showModal('Cosmetic Pack Premium','30000')">Pilih</button></div></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-alt">
+    <div>
+      <div class="section-header"><h2>Cara Pembelian</h2><p>Ikuti langkah-langkah berikut untuk membeli</p></div>
+      <div class="features-grid">
+        <div class="feature-card"><span class="feature-icon">1️⃣</span><h3>Pilih Item</h3><p>Tentukan rank, kit, atau cosmetic yang ingin kamu beli dari daftar di atas.</p></div>
+        <div class="feature-card"><span class="feature-icon">2️⃣</span><h3>Scan QRIS</h3><p>Scan kode QRIS menggunakan aplikasi e-wallet atau mobile banking Anda.</p></div>
+        <div class="feature-card"><span class="feature-icon">3️⃣</span><h3>Bayar</h3><p>Transfer sesuai nominal item yang dipilih dan simpan bukti screenshot.</p></div>
+        <div class="feature-card"><span class="feature-icon">4️⃣</span><h3>Kirim Bukti</h3><p>Klik tombol "Sudah Bayar? Kirim Bukti SS" untuk mengirim bukti ke admin.</p></div>
+        <div class="feature-card"><span class="feature-icon">5️⃣</span><h3>Verifikasi</h3><p>Admin akan memverifikasi pembayaran Anda dalam waktu 1×24 jam.</p></div>
+        <div class="feature-card"><span class="feature-icon">6️⃣</span><h3>Aktivasi</h3><p>Setelah terverifikasi, item yang Anda beli akan segera diaktifkan.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-header"><h2>Keuntungan Rank</h2><p>Berbagai keuntungan yang didapat dengan membeli rank</p></div>
+    <div class="features-grid">
+      <div class="feature-card"><span class="feature-icon">💬</span><h3>Chat Prefix</h3><p>Tampilkan rankmu dengan prefix keren di chat server.</p></div>
+      <div class="feature-card"><span class="feature-icon">🏠</span><h3>Home Tambahan</h3><p>Dapatkan slot home tambahan untuk teleportasi yang lebih mudah.</p></div>
+      <div class="feature-card"><span class="feature-icon">💰</span><h3>Bonus Uang</h3><p>Dapatkan bonus uang in-game setiap hari sesuai rank.</p></div>
+      <div class="feature-card"><span class="feature-icon">🎁</span><h3>Kit Eksklusif</h3><p>Akses ke kit eksklusif dengan item langka dan berkualitas.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Modal -->
+<div class="modal" id="paymentModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <h3>💳 Pembayaran QRIS</h3>
+    <div class="modal-item-info">
+      <div class="item-name" id="modalItemName">Item</div>
+      <div class="item-price" id="modalItemPrice">Rp 0</div>
+    </div>
+    <div class="modal-qris"><img src="qris.png" alt="QRIS Payment"></div>
+    <a href="https://wa.me/6283878828987?text=Halo%20admin%20Gacor%20Legends%2C%20saya%20sudah%20melakukan%20pembayaran%20melalui%20QRIS.%20Berikut%20bukti%20screenshot%20pembayaran%20saya%3A" target="_blank" class="btn-whatsapp">
+      📱 Sudah Bayar? Kirim Bukti SS
+    </a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section"><h4>Gacor Legends</h4><p>Server Minecraft Roleplay terbaik di Indonesia dengan komunitas yang ramah dan aktif.</p></div>
+    <div class="footer-section"><h4>Quick Links</h4><a href="home.html">Home</a><a href="penjelasan.html">Penjelasan</a><a href="p2w.html">P2W</a><a href="team.html">Team</a><a href="donasi.html">Donasi</a></div>
+    <div class="footer-section"><h4>Contact</h4><p>Discord: Gacor Legends</p><a href="https://wa.me/6283878828987" target="_blank">WhatsApp: +62 838-7882-8987</a><p>Email: support@gacorlegends.com</p></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2025 Gacor Legends — All Rights Reserved</p></div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const h=document.getElementById('hamburger'),m=document.getElementById('mobileMenu');
+  h.addEventListener('click',()=>{h.classList.toggle('open');m.classList.toggle('open');});
+  m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{h.classList.remove('open');m.classList.remove('open');}));
+  document.addEventListener('click',e=>{if(!h.contains(e.target)&&!m.contains(e.target)){h.classList.remove('open');m.classList.remove('open');}});
+
+  function showModal(name, price) {
+    document.getElementById('modalItemName').textContent = name;
+    document.getElementById('modalItemPrice').textContent = 'Rp ' + parseInt(price).toLocaleString('id-ID');
+    document.getElementById('paymentModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    document.getElementById('paymentModal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('paymentModal').addEventListener('click', function(e){ if(e.target===this) closeModal(); });
+  document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+</script>
+</body>
+</html>
