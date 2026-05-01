@@ -17,7 +17,7 @@
       <li><a href="team.html">Team</a></li>
       <li><a href="donasi.html">Donasi</a></li>
     </ul>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <button type="button" class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
@@ -71,26 +71,26 @@
       <div class="p2w-category">
         <h3>👑 Rank</h3>
         <ul class="p2w-list">
-          <li><span class="p2w-item-name">Rank Pemula</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 15.000</span><button class="btn-select-payment" onclick="showModal('Rank Pemula','15000')">Pilih</button></div></li>
-          <li><span class="p2w-item-name">Rank Pejuang</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 25.000</span><button class="btn-select-payment" onclick="showModal('Rank Pejuang','25000')">Pilih</button></div></li>
-          <li><span class="p2w-item-name">Rank Pahlawan</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 40.000</span><button class="btn-select-payment" onclick="showModal('Rank Pahlawan','40000')">Pilih</button></div></li>
-          <li><span class="p2w-item-name">Rank Legenda</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 50.000</span><button class="btn-select-payment" onclick="showModal('Rank Legenda','50000')">Pilih</button></div></li>
-          <li><span class="p2w-item-name">Rank Sepuh</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 60.000</span><button class="btn-select-payment" onclick="showModal('Rank Sepuh','60000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Rank Pemula</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 15.000</span><button type="button" class="btn-select-payment" onclick="showModal('Rank Pemula','15000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Rank Pejuang</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 25.000</span><button type="button" class="btn-select-payment" onclick="showModal('Rank Pejuang','25000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Rank Pahlawan</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 40.000</span><button type="button" class="btn-select-payment" onclick="showModal('Rank Pahlawan','40000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Rank Legenda</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 50.000</span><button type="button" class="btn-select-payment" onclick="showModal('Rank Legenda','50000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Rank Sepuh</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 60.000</span><button type="button" class="btn-select-payment" onclick="showModal('Rank Sepuh','60000')">Pilih</button></div></li>
         </ul>
       </div>
 
       <div class="p2w-category">
         <h3>🎒 Kit</h3>
         <ul class="p2w-list">
-          <li><span class="p2w-item-name">Suprem Kit</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 25.000</span><button class="btn-select-payment" onclick="showModal('Suprem Kit','25000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Suprem Kit</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 25.000</span><button type="button" class="btn-select-payment" onclick="showModal('Suprem Kit','25000')">Pilih</button></div></li>
         </ul>
       </div>
 
       <div class="p2w-category">
         <h3>✨ Cosmetic</h3>
         <ul class="p2w-list">
-          <li><span class="p2w-item-name">Cosmetic Pack Basic</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 25.000</span><button class="btn-select-payment" onclick="showModal('Cosmetic Pack Basic','25000')">Pilih</button></div></li>
-          <li><span class="p2w-item-name">Cosmetic Pack Premium</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 30.000</span><button class="btn-select-payment" onclick="showModal('Cosmetic Pack Premium','30000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Cosmetic Pack Basic</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 25.000</span><button type="button" class="btn-select-payment" onclick="showModal('Cosmetic Pack Basic','25000')">Pilih</button></div></li>
+          <li><span class="p2w-item-name">Cosmetic Pack Premium</span><div class="p2w-item-right"><span class="p2w-item-price">Rp 30.000</span><button type="button" class="btn-select-payment" onclick="showModal('Cosmetic Pack Premium','30000')">Pilih</button></div></li>
         </ul>
       </div>
 
@@ -126,7 +126,7 @@
 <!-- Modal -->
 <div class="modal" id="paymentModal">
   <div class="modal-content">
-    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <button type="button" class="modal-close" onclick="closeModal()">&times;</button>
     <h3>💳 Pembayaran QRIS</h3>
     <div class="modal-item-info">
       <div class="item-name" id="modalItemName">Item</div>
